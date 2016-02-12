@@ -41,13 +41,13 @@ Function: returns a json array of objects that contain the entries for a given u
 Parameters:  'semester' ex. 'FALL2015', 'id' ex. '5580c7c77b1e9'
 Return example:
 
-`[
-{"pk_entries_id":"217","entry_date":"2015-08-28","distance":"112.0","fk_events":"16","fk_contestants":"5580c7c77b1e9","fk_mode":"1","pk_contestants_id":"5580c7c77b1e9","register_date":"2015-06-17","u_name":"Eddy","pk_events_id":"16","semester":"FALL2015 ","start_date":"2015-06-15","end_date":"2015-11-13","pk_mode_id":"1","mode":"Bike","units":"Miles"}
+`[`
+`{"pk_entries_id":"217","entry_date":"2015-08-28","distance":"112.0","fk_events":"16","fk_contestants":"5580c7c77b1e9","fk_mode":"1","pk_contestants_id":"5580c7c77b1e9","register_date":"2015-06-17","u_name":"Eddy","pk_events_id":"16","semester":"FALL2015 ","start_date":"2015-06-15","end_date":"2015-11-13","pk_mode_id":"1","mode":"Bike","units":"Miles"}`
  
-,{"pk_entries_id":"218","entry_date":"2015-08-29","distance":"12.0","fk_events":"16","fk_contestants":"5580c7c77b1e9","fk_mode":"2","pk_contestants_id":"5580c7c77b1e9","register_date":"2015-06-17","u_name":"Eddy","pk_events_id":"16","semester":"FALL2015 ","start_date":"2015-06-15","end_date":"2015-11-13","pk_mode_id":"2","mode":"Run","units":"Miles"}
+`,{"pk_entries_id":"218","entry_date":"2015-08-29","distance":"12.0","fk_events":"16","fk_contestants":"5580c7c77b1e9","fk_mode":"2","pk_contestants_id":"5580c7c77b1e9","register_date":"2015-06-17","u_name":"Eddy","pk_events_id":"16","semester":"FALL2015 ","start_date":"2015-06-15","end_date":"2015-11-13","pk_mode_id":"2","mode":"Run","units":"Miles"}`
  
-,{"pk_entries_id":"219","entry_date":"2015-08-27","distance":"0.5","fk_events":"16","fk_contestants":"5580c7c77b1e9","fk_mode":"3","pk_contestants_id":"5580c7c77b1e9","register_date":"2015-06-17","u_name":"Eddy","pk_events_id":"16","semester":"FALL2015 ","start_date":"2015-06-15","end_date":"2015-11-13","pk_mode_id":"3","mode":"Swim","units":"Laps"}
-]`
+`,{"pk_entries_id":"219","entry_date":"2015-08-27","distance":"0.5","fk_events":"16","fk_contestants":"5580c7c77b1e9","fk_mode":"3","pk_contestants_id":"5580c7c77b1e9","register_date":"2015-06-17","u_name":"Eddy","pk_events_id":"16","semester":"FALL2015 ","start_date":"2015-06-15","end_date":"2015-11-13","pk_mode_id":"3","mode":"Swim","units":"Laps"}`
+`]`
 
 ### getProgress.php
 method: GET
@@ -87,10 +87,10 @@ username ex. "batman" (this is optional)
 
 Return examples:
 
-`{"code" : 2, "message": "There is no current IronMan in progress. Please check with the activities office for start dates."}
-{"code" : 1, "message": "This username is a duplicate"}
-{"code":-1, "message": "<<MESSAGE FROM DATABASE>> "} 
-{"code":0, "message": "<<13 digit user id>>"}`
+`{"code" : 2, "message": "There is no current IronMan in progress. Please check with the activities office for start dates."}`
+`{"code" : 1, "message": "This username is a duplicate"}`
+`{"code":-1, "message": "<<MESSAGE FROM DATABASE>> "} `
+`{"code":0, "message": "<<13 digit user id>>"}`
 
 
 
