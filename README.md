@@ -72,16 +72,19 @@ date ex. 2015-06-16 (SQL format)
 user  ex. 5580c7c77b1e9
 Return example:
 
-`{"code":1, "message": "There was an error in the database: "exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`iron_man`.`entries`, CONSTRAINT `entries_ibfk_3` FOREIGN KEY (`fk_mode`) REFERENCES `mode` (`pk_mode_id`))' in /var/www/html/ironman/newEntry.php:156
-Stack trace:
-#0 /var/www/html/ironman/newEntry.php(156): PDOStatement->execute()
-#1 {main}"`
+`{"code":1, "message": "There was an error in the database: "exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (``iron_man``.``entries``, CONSTRAINT ``entries_ibfk_3`` FOREIGN KEY (``fk_mode``) REFERENCES ``mode`` (``pk_mode_id``))' in /var/www/html/ironman/newEntry.php:156`
+`Stack trace:`
+`\#0 /var/www/html/ironman/newEntry.php(156): PDOStatement->execute()`
+`\#1 {main}"`
  
 ### newUser.php
+
 method: POST
 Function: Creates a new user in the database. Takes a username(optional) and checks to see if it exists already. This service relies on codes to communicate the result of trying to insert a new user. 
+
 Parameters: 
- username ex. "batman" (this is optional)
+username ex. "batman" (this is optional)
+
 Return examples:
 
 `{"code" : 2, "message": "There is no current IronMan in progress. Please check with the activities office for start dates."}
